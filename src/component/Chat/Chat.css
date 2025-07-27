@@ -1,0 +1,115 @@
+.chatPage {
+    background-color: rgba(0, 0, 0, 0.915);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatContainer {
+    background-color: white;
+    height: 60%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Header Styling */
+.header {
+    background-color: rgba(128, 0, 128, 0.98);
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header > h2 {
+    font-size: 1.5vmax;
+    color: white;
+    margin: 2.5vmax;
+}
+
+.header img {
+    margin: 2.5vmax;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.header > img:hover {
+    transform: scale(1.2);
+}
+
+/* Chat Box Styling */
+.chatBox {
+    height: 70%;
+    box-sizing: border-box;
+    padding: 1vmax;
+    overflow-y: auto;
+}
+
+/* Typing Indicator */
+.typingIndicator {
+    padding: 8px 15px;
+    margin: 5px 12px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    max-width: 60%;
+    font-size: 14px;
+    color: #555;
+    display: inline-block;
+    align-self: flex-start;
+}
+
+/* Input Box Styling */
+.inputBox {
+    height: 15%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 0 1vmax;
+    gap: 1vmax;
+}
+
+/* Send Button */
+.sendBtn {
+    background-color: rgba(128, 0, 128, 0.98);
+    color: white;
+    border: none;
+    width: 21%;
+    transition: all 0.3s;
+    cursor: pointer;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sendBtn > img {
+    width: 2.6vmax;
+    filter: brightness(100) invert();
+    transition: all 0.3s;
+}
+.sendBtn:hover {
+    background-color: rgb(156, 13, 42);
+}
+.sendBtn:hover img {
+    transform: translateX(10px);
+}
+
+/* Textarea input instead of input[type=text] */
+#chatInput {
+    width: 80%;
+    border: none;
+    padding: 1.2vmax;
+    background-color: white;
+    outline: none;
+    font-family: 'Courier New', monospace;
+    font-size: 1.2vmax;
+    border-top: 0.2vmax solid rgba(41, 41, 41, 0.562);
+    resize: none;
+    height: 100%;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    box-sizing: border-box;
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash&display=swap');
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+.JoinPage {
+    background-image: url("../../assets/chatbotimage.jpg");
+    background-color: rgb(31, 29, 29);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header {
+    position: absolute;
+    top: 1.6vmax;
+    left: 2vmax;
+    color: white;
+    font-size: 2vmax;
+    font-family: cursive;
+    padding: 0vmax;
+    box-sizing: border-box;
+    background-color: transparent !important;  /* <-- Force removal */
+    height: 0vmax !important;
+}
+
+
+/* Centered Join Container */
+.JoinContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10vw;
+    margin-top: 32px;;
+}
+
+.JoinContainer > img {
+    width: 10vmax;
+}
+
+/* Transparent, rounded input fields */
+#joinInput,
+#joinRoom {
+    width: 20vmax;
+    padding: 1vmax;
+    font-size: 1.2vmax;
+    margin: 1.1vmax;
+    height: 42px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    font-family: "Roboto";
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+#joinInput::placeholder,
+#joinRoom::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Focus effect */
+#joinInput:focus,
+#joinRoom:focus {
+    border-color: #e0e0e0;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Transparent, rounded, bordered button */
+.joinbtn {
+    width: 13vmax;
+    padding: 1vmax;
+    margin: 1vmax;
+    margin-right: 116px;
+    height: 50px;
+    color: white;
+    font-family: "Roboto";
+    font-size: 1.2vmax;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.joinbtn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #e0e0e0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .JoinContainer {
+        width: 80%;
+    }
+
+    #joinInput,
+    #joinRoom {
+        width: 36vmax;
+        padding: 2.3vmax;
+        font-size: 2.9vmax;
+        border-radius: 50px;
+    }
+
+    .joinbtn {
+        width: 36vmax;
+        padding: 2vmax;
+        font-size: 2.9vmax;
+        margin: 2vmax;
+        border-radius: 50px;
+    }
+
+    .header {
+        font-size: 4vmax;
+        padding: 1vmax;
+    }
+}

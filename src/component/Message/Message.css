@@ -1,0 +1,72 @@
+.messageRow {
+  display: flex;
+  margin: 8px 12px;
+  width: 100%;
+}
+
+.messageRow.left {
+  justify-content: flex-start;
+}
+
+.messageRow.right {
+  justify-content: flex-end;
+}
+
+.messageBubble {
+  padding: 10px 14px;
+  border-radius: 16px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 14px;
+  max-width: 80%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.messageBubble.left {
+  background-color: #dcf8c6; /* WhatsApp green */
+  color: black;
+  border-top-left-radius: 0;
+}
+
+.messageBubble.right {
+  background-color: #e4e6eb; /* Gray bubble for self */
+  color: black;
+  border-top-right-radius: 0;
+}
+
+.messageText {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Dropdown Menu */
+.dropdownMenu {
+  position: absolute;
+  top: -60px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  width: 120px;
+  padding: 5px 0;
+}
+
+.dropdownMenu.left {
+  left: 12px;
+}
+
+.dropdownMenu.right {
+  right: 12px;
+}
+
+.dropdownItem {
+  padding: 8px 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+}
